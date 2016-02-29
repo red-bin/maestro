@@ -21,7 +21,7 @@ def get_iso_cmd(data):
 
 
 def rsync_autoiso():
-    rsync_ret = subprocess.call("rsync -ravzq --no-motd cer-lx-unixutil1:/opt/installmedia/autoiso /opt/installmedia 2>/dev/null",shell=True)
+    rsync_ret = subprocess.call("rsync -ravzq --no-motd localhost:/opt/installmedia/autoiso /opt/installmedia 2>/dev/null",shell=True)
      
     if rsync_ret != 0:
         return False
