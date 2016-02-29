@@ -139,14 +139,14 @@ def free_ipplan_ip(subnet, caller=None):
     return free_ips
 
 def environments(input=None, caller=None):
-    return ['PROD','DR','QA','DEV','UAT','POC']
+    return ['1','2','3','4']
 
 def datacenters(input=None, caller=None):
-    return ["Cermak","Chicago","WoodDale","Bishops Square", "Park Royal"]
+    return ["here", "there", "theretoo"]
 
 def region_from_dc(input=None, caller=None):
-    regions = {'na':["Cermak","Chicago","WoodDale"], 
-               'eu':["Bishops Square", "Park Royal"] }
+    regions = {'na':["France","Spain","South pole"], 
+               'eu':["Myspace", "Reddit"] }
 
     for key in regions.keys():
         if input in regions[key]:
